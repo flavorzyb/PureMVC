@@ -82,7 +82,7 @@ open class Notification : INotification {
     - returns: the string representation of the `Notification` instance.
     */
     open func description() -> String {
-        return "Notification Name: \(self.name) \(self.body) \(self.type)"
+        return "Notification Name: \(self.name) \(String(describing: self.body)) \(String(describing: self.type))"
     }
     
 }
